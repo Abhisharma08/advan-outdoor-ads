@@ -8,6 +8,11 @@ import SectionHeader from "@/components/SectionHeader";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Build from "next/dist/build";
 
+export const metadata = {
+  title: "Innovative Branding Ideas | AD Vantage Integrated Marketing",
+  description: "AD Vantage helping businesses to connect with customers in a meaningful way by being technology-enabled, data-driven, and creative marketing techniques."
+};
+
 const LOGO_URL = "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1778668639/advlogo_qq9f92.png";
 const HERO_BG_URL = "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1778674606/hero_qkgfwb.webp";
 const DEFAULT_PLACEHOLDER = "https://picsum.photos/seed/placeholder/800/600";
