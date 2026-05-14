@@ -1,7 +1,7 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: '/OutdoorsAds',
+  basePath: '/Outdoor-Advertising',
   skipTrailingSlashRedirect: true,
   /* config options here */
   typescript: {
