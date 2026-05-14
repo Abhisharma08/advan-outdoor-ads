@@ -23,7 +23,7 @@ const defaultValues: FormValues = {
   email: "",
   phone: "",
   city: "",
-  lead_source: "Retail Landing Page",
+  lead_source: "Outdoor Advertisment lp",
 }
 
 function validateForm(values: FormValues) {
