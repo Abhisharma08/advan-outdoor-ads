@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { ArrowRight, BadgeDollarSignIcon, GraduationCap, Hammer, Layout, Lightbulb, Megaphone, PanelsTopLeft, ShieldCheck, ShoppingBag, Signpost, Sofa, Sparkle, SparkleIcon, Star, Store, Users } from "lucide-react";
+import { ArrowRight, GraduationCap, ShieldCheck, Star,} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { MapPinned, Building2, PackageOpen, Handshake, Rocket, MonitorSmartphone, BriefcaseBusiness, Sparkles,} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import LeadForm from "@/components/LeadForm";
 import ScrollToLeadButton from "@/components/ScrollToLeadButton";
@@ -71,18 +72,18 @@ export default function LandingPage() {
                   Admissions Open 2026-27
                 </Badge> */}
                 <h1 className="font-headline text-3xl leading-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.45)] md:text-5xl">
-                  We Don't Just Design Stores. <br /> We Build Brands Inside Them.
+                  We Don't Just Run Campaigns. <br />We Build Brand Connections.
                 </h1>
                 <p className="max-w-xl text-xl text-white">
-                  Join hands with AD Vantage Marketing and get retail branding strategies that make your customers choose you, every single time they walk in.
+                  Join hands with AD Vantage Marketing and get brand activation strategies that create real consumer experiences, ones that go beyond being seen.
                 </p>
                 <div className="flex max-w-2xl flex-wrap gap-2">
                   {[
-                    "Top Retail Branding Agency in India",
-                    "In-Shop Branding Specialists",
-                    "Store Layout & Space Design Experts",
+                    "Top Brand Activation Agency in India",
+                    "Mall & School Activation Specialists",
+                    "Feet on Street Experts",
                     "Pan-India Presence",
-                    "End-to-End Retail Execution",
+                    "End-to-End Activation Execution",
                   ].map((item) => (
                     <div
                       key={item}
@@ -95,9 +96,9 @@ export default function LandingPage() {
                 </div>
                 <div className="flex max-w-2xl flex-wrap gap-3">
                   {[
-                    "Retail Experience Design",
-                    "Visual Merchandising ",
-                    "Materials & Fabrications",
+                    "Consumer Engagement",
+                    "Experiential Marketing",
+                    "On-Ground Activations",
                   ].map((item) => (
                     <div
                       key={item}
@@ -134,10 +135,10 @@ export default function LandingPage() {
               </div>
               <div className="space-y-6">
                 <SectionHeader
-                  title="Strategy. Creativity. Execution. Come First."
+                  title="Strategy. Experience. Connection. Come First."
                   subtitle={
                 <>
-                  At AD Vantage, we focus on what truly drives brand growth — visibility, experience, and consumer connection.{" "}
+                  At AD Vantage, we focus on what truly drives brand engagement, direct consumer interaction, emotional connections, and experiences that last.{" "}
                 </>
             }
                 centered={false}
@@ -145,9 +146,9 @@ export default function LandingPage() {
 
                 <ul className="space-y-4">
                   {[
-                    "Strategy over guesswork",
-                    "Visibility over assumptions",
-                    "Consumer experience over generic campaigns",
+                    "Experience over exposure",
+                    "Engagement over impressions",
+                    "Consumer connection over generic campaigns",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 font-medium text-primary">
                       <ShieldCheck className="h-6 w-6 text-secondary" />
@@ -156,10 +157,10 @@ export default function LandingPage() {
                   ))}
                 </ul>
                 <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">
-                  We build brand presence, not just advertisements.
+                  We build brand moments, not just brand awareness.
                 </p>
                 <p className="mt-2 text-lg leading-relaxed text-primary">
-                  From day one, every solution we craft is focused on making your brand unmissable and your customer's experience unforgettable.
+                  From day one, every activation we craft is focused on making your brand felt, not just seen.
                 </p>
               </div>
             </div>
@@ -171,31 +172,31 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
               <div className="space-y-6">
                 <SectionHeader
-                  title="Your Market Is Growing. Is Your Brand Keeping Up?"
-                  subtitle="India's retail and digital landscape is expanding faster than ever."
+                  title="Your Audience Is Out There. Are You Engaging Them?"
+                  subtitle="India's consumer landscape is more competitive than ever."
                   centered={false}
                 />
-                <ul className="list-inside list-disc space-y-2 text-lg text-muted-foreground marker:text-secondary">
+                <ul className="list-outside list-disc space-y-2 text-lg text-muted-foreground marker:text-secondary">
                   <li>
                     <span className="text-slate-600">
-                      India's consumer market is one of the fastest-growing in the world
+                      Brands that create direct consumer experiences build stronger loyalty
                     </span>
                   </li>
 
                   <li>
                     <span className="text-slate-600">
-                      Brands that invest in consistent retail visibility consistently outperform those that don't
+                      On-ground activations drive purchase decisions at the point of contact
                     </span>
                   </li>
 
                   <li>
                     <span className="text-slate-600">
-                      In-store experience and retail branding are among the top drivers of purchase decisions
+                      Experiential marketing consistently outperforms traditional advertising in recall
                     </span>
                   </li>
                 </ul>
-                <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">Retail Presence = Business Growth</p>
-                <p className="text-lg text-muted-foreground">With the right retail branding strategy, your brand can reach, engage, and convert — right at the point where customers make their decisions.</p>
+                <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">Consumer Engagement = Brand Growth</p>
+                <p className="text-lg text-muted-foreground">With the right activation strategy, your brand can connect, convert, and build lasting loyalty.</p>
               </div>
               <div className="relative h-96 overflow-hidden rounded-2xl shadow-2xl">
                 <Image
@@ -214,19 +215,19 @@ export default function LandingPage() {
           <div className="container mx-auto max-w-7xl px-4">
             <SectionHeader
               title="What We Do For Your Brand"
-              subtitle="This approach is built to give your brand a sharper edge in a competitive market."
+              subtitle="Every activation we deliver is built around one goal, making your brand impossible to forget."
             />
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
-                { icon: <BadgeDollarSignIcon />, title: "Retail Branding", desc: "Strategies that make customers choose your brand over competitors." },
-                { icon: <Lightbulb />, title: "In-Shop Branding", desc: "Unique brand experiences from wall graphics to display units." },
-                { icon: <PanelsTopLeft />, title: "Store Layout & Space Design", desc: "Layouts that mesmerise customers and drive long-term profitability." },
-                { icon: <Signpost />, title: "Navigation & Wayfinding Signages", desc: "Signages that guide customers and impact their purchase decisions." },
-                { icon: <ShoppingBag />, title: "Visual Merchandising", desc: "Merchandising strategies that bring customers in and back again." },
-                { icon: <Sofa />, title: "Retail Store Interior Designing", desc: "Interiors that build the right atmosphere around your brand." },
-                { icon: <Hammer />, title: "Materials & Fabrications", desc: "Budget-friendly materials that forge deeper customer brand connections." },
-                { icon: <Megaphone />, title: "Outdoor Advertising", desc: "High-footfall placements that put your brand where it matters." },
-                { icon: <SparkleIcon />, title: "Brand Activation", desc: "Events and installations that build strong direct brand-connect." },
+            { icon: <MapPinned />, title: "Feet on Street ", desc: "Ground teams that take your brand directly to consumers." },
+            { icon: <Building2 />, title: "Mall Activations", desc: "Immersive brand experiences inside high-footfall malls." },
+            { icon: <GraduationCap />, title: "School & College Activations", desc: "Engaging campaigns that build early brand affinity." },
+            { icon: <PackageOpen />, title: "Product Sampling", desc: "Wet and dry sampling that creates powerful brand associations." },
+            { icon: <Handshake />, title: "Dealer Activations", desc: "Campaigns that turn your dealers into brand ambassadors." },
+            { icon: <Rocket />, title: "App Launch Activations", desc: "Grand launch experiences that make your app a sensation." },
+            { icon: <MonitorSmartphone />, title: "Digital Activations", desc: "Online campaigns that drive results and boost brand presence." },
+            { icon: <BriefcaseBusiness />, title: "Corporate Activations", desc: "Memorable experiences that connect brands with professionals." },
+            { icon: <Sparkles />, title: "Experiential Marketing", desc: "Immersive brand storytelling that makes your brand unforgettable." },
               ].map((item) => (
                 <div
                   key={item.title}
@@ -252,19 +253,19 @@ export default function LandingPage() {
                 subtitle={
                 <>
                   No matter where your brand stands today, the outcome is the same:{" "}
-                  <span className="font-semibold text-secondary">stronger presence</span>,{" "}
-                  <span className="font-semibold text-secondary">better recall</span>,{" "}
-                  <span className="font-semibold text-secondary">more customers.</span>
+                  <span className="font-semibold text-secondary">stronger consumer connection</span>,{" "}
+                  <span className="font-semibold text-secondary">better brand recall</span>,{" "}
+                  <span className="font-semibold text-secondary">lasting loyalty.</span>
                 </>   
               }           light
             />
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {[
-                { title: "Retail Branding Package", duration: "Project-Based", desc: "Any Business with a Physical Store Complete in-store branding and retail experience." },
-                { title: "In-Shop Branding & Store Design", duration: "Project-Based", desc: "Retail Stores & Showrooms Branded interiors from wall graphics to displays." },
-                { title: "Store Layout & Space Design", duration: "Project-Based", desc: "New Stores & Store Renovations Space planning that guides and converts customers." },
-                { title: "Visual Merchandising Package", duration: "Project-Based", desc: "Retail Brands & Fashion Labels Display solutions that bring customers back again." },
-                { title: "Full Retail Brand Strategy", duration: "Project-Based", desc: "Growing Retail Businesses & Startups End-to-end strategy from R&D to execution." },
+              { title: "Feet on Street Package", duration: "Campaign-Based", desc: "Any Brand Reaching Consumers Directly Ground-level teams delivering your brand promise." },
+              { title: "Mall Activation Package", duration: "Event-Based", desc: "Retail Brands & Consumer Products Immersive mall experiences that captivate and convert." },
+              { title: "School & College Activation", duration: "Campaign-Based", desc: "Youth-Focused Brands & Products Campus campaigns that build brand love early." },
+              { title: "Product Sampling Package", duration: "Campaign-Based", desc: "FMCG & Consumer Brands Sampling campaigns that leave a lasting brand impression." },
+              { title: "Full Brand Activation Strategy", duration: "Retainer-Based", desc: "Growing Businesses & New Market Entries End-to-end activation from strategy to execution." },
               ].map((item) => (
                 <Card key={item.title} className="group border-white/20 bg-white/10 transition-all hover:bg-white/20">
                   <CardContent className="flex h-full flex-col p-6 text-center">
@@ -295,7 +296,7 @@ export default function LandingPage() {
         <section className="relative w-full overflow-hidden bg-white py-24" style={deferredSectionStyle}>
           <div className="container relative z-10 mx-auto max-w-7xl space-y-8 px-4 text-center">
             <h2 className="font-headline text-4xl text-primary md:text-5xl">Your Brand Won't Wait.</h2>
-            <p>The right marketing partner can help you grow faster.</p>
+            <p>The right activation partner can help you grow faster.</p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <ScrollToLeadButton
                 variant="outline"
@@ -318,7 +319,7 @@ export default function LandingPage() {
                 Enquire Now
               </ScrollToLeadButton>
             </div>
-            <p className="text-sm text-muted-foreground">Don&apos;t wait to turn your brand's potential into performance.</p>
+            <p className="text-sm text-muted-foreground">Don&apos;t wait to turn your brand's potential into real consumer connection</p>
           </div>
         </section>
 
@@ -327,12 +328,12 @@ export default function LandingPage() {
             <div className="mx-auto max-w-4xl">
               <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                 <div className="space-y-6">
-                  <h2 className="font-headline text-3xl text-primary">Are you ready to put your brand where it belongs?</h2>
+                  <h2 className="font-headline text-3xl text-primary">Are you ready to put your brand in front of the right people?</h2>
                   <p className="text-lg text-muted-foreground">
-                    Get expert retail branding strategies tailored to your store. Fill in your details and take the first step today.
+                    Get expert brand activation strategies tailored to your audience. Fill in your details and take the first step today.
                   </p>
                   <p className="text-base font-semibold text-secondary">
-                    Enquire Now!
+                    BOOK A FREE CONSULTATION
                   </p>
                 </div>
                 <LeadForm />
