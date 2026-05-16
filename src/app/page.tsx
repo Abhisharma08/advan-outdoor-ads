@@ -72,13 +72,13 @@ export default function LandingPage() {
                   Admissions Open 2026-27
                 </Badge> */}
                 <h1 className="font-headline text-3xl leading-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.45)] md:text-5xl">
-                  We Don't Just Place Ads. <br />We Put Your Brand Everywhere It Matters
+                  Outdoor Advertising That Makes Your Brand Impossible To Miss In Bengaluru
                 </h1>
                 <p className="max-w-xl text-xl text-white">
-                  Join hands with AD Vantage Marketing and get outdoor advertising strategies that capture attention, anywhere your audience goes.
-                </p>
+                  We help real estate brands, retail businesses, D2C companies, startups, and enterprises reach high-traffic audiences through strategic hoardings, metro branding, transit advertising, and outdoor media campaigns across Bengaluru.
+                  </p>
                 <div className="flex max-w-2xl flex-wrap gap-2">
-                  {[
+                  {/* {[
                     "Top Outdoor Advertising Agency in India",
                     "Hoarding & Transit Ad Specialists",
                     "Metro & Skywalk Advertising Experts",
@@ -107,7 +107,7 @@ export default function LandingPage() {
                       <ShieldCheck className="h-4 w-4 shrink-0" />
                       <span>{item}</span>
                     </div>
-                  ))}
+                  ))} */}
                 </div>
                 <p className="text-lg italic text-secondary">
                   BOOK A FREE CONSULTATION
