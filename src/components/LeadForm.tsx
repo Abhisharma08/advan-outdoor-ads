@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import React, { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -8,6 +8,7 @@ import { submitToHubSpot } from "@/app/actions/hubspot"
 
 type FormValues = {
   name: string
+  brand: string
   email: string
   phone: string
   city: string
@@ -18,12 +19,22 @@ type FormErrors = Partial<Record<keyof FormValues, string>> & {
   submit?: string
 }
 
+type LeadFormProps = {
+  className?: string
+  title?: string
+  subtitle?: string
+  buttonText?: string
+  bottomText?: React.ReactNode
+  buttonclassName?: string
+}
+
 const defaultValues: FormValues = {
   name: "",
+  brand: "",
   email: "",
   phone: "",
   city: "",
-  lead_source: "Outdoor Advertisment lp",
+  lead_source: "Brand Activation lp",
 }
 
 function validateForm(values: FormValues) {
@@ -49,7 +60,14 @@ function validateForm(values: FormValues) {
   return errors
 }
 
-export default function LeadForm({ className }: { className?: string }) {
+export default function LeadForm({
+  className,
+  title = "Plan Your Activation",
+  subtitle = "Let’s Build Your Activation Campaign.",
+  buttonText = "Get My Free Plan →",
+  buttonclassName ="",
+  bottomText = "Free plan delivered in 24 hours · No commitment · WhatsApp or email — your choice",
+}: LeadFormProps) {
   const [values, setValues] = useState<FormValues>(defaultValues)
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -118,13 +136,12 @@ export default function LeadForm({ className }: { className?: string }) {
     <div
       className={`rounded-xl border border-muted bg-white p-6 shadow-2xl md:p-8 ${className}`}
     >
-      <h3 className="mb-2 text-2xl font-headline text-primary">
-        Get A Free Consultation
+      <h3 className="mb-2 text-4xl font-headline font-bold text-secondary">
+        {title}
       </h3>
 
       <p className="mb-6 text-sm text-muted-foreground">
-        Our experts will contact you shortly with tailored retail branding
-        solutions.
+        {subtitle}
       </p>
 
       <form
@@ -162,6 +179,26 @@ export default function LeadForm({ className }: { className?: string }) {
               {errors.name}
             </p>
           ) : null}
+        </div>
+
+                  {/* Brand / Company */}
+        <div className="space-y-1.5">
+          <label
+            htmlFor="brand"
+            className="text-sm font-medium text-foreground"
+          >
+            BRAND/Company
+          </label>
+
+          <input
+            id="brand"
+            name="brand"
+            value={values.brand}
+            onChange={handleChange}
+            placeholder="Your Brand or Company"
+            autoComplete="organization"
+            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          />
         </div>
 
         {/* Phone + Email */}
@@ -253,7 +290,7 @@ export default function LeadForm({ className }: { className?: string }) {
 
         <Button
           type="submit"
-          className="h-14 w-full bg-secondary text-lg font-bold text-white hover:bg-secondary/90"
+          className={`h-14 w-full bg-secondary text-lg font-bold text-white hover:bg-secondary/90 ${buttonclassName}`}
           disabled={isSubmitting}
         >
           {isSubmitting ? (
@@ -262,9 +299,13 @@ export default function LeadForm({ className }: { className?: string }) {
               Processing...
             </>
           ) : (
-            "Submit"
+            buttonText
           )}
         </Button>
+
+        <p className="text-center text-xs text-muted-foreground">
+          {bottomText}
+        </p>
       </form>
     </div>
   )

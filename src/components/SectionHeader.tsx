@@ -1,3 +1,4 @@
+import React from "react";
 
 export default function SectionHeader({ 
   title, 
@@ -5,14 +6,14 @@ export default function SectionHeader({
   centered = true,
   light = false 
 }: { 
-  title: string; 
-  subtitle?: string; 
+  title: React.ReactNode; 
+  subtitle?: React.ReactNode; 
   centered?: boolean;
   light?: boolean;
 }) {
   return (
-    <div className={`mb-12 ${centered ? 'text-center' : 'text-left'} max-w-3xl ${centered ? 'mx-auto' : ''}`}>
-      <h2 className={`text-3xl md:text-4xl font-headline mb-4 ${light ? 'text-white' : 'text-primary'}`}>
+    <div className={`mb-6 ${centered ? 'text-center' : 'text-left'} max-w-3xl ${centered ? 'mx-auto' : ''}`}>
+      <h2 className={`mb-3 text-4xl text-slate-900 md:text-4xl font-headline ${light ? 'text-white' : 'text-primary'}`}>
         {title}
       </h2>
       {subtitle && (
