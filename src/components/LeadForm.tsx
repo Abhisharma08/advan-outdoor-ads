@@ -8,7 +8,6 @@ import { submitToHubSpot } from "@/app/actions/hubspot"
 
 type FormValues = {
   name: string
-  brand: string
   email: string
   phone: string
   city: string
@@ -30,7 +29,6 @@ type LeadFormProps = {
 
 const defaultValues: FormValues = {
   name: "",
-  brand: "",
   email: "",
   phone: "",
   city: "",
@@ -62,8 +60,8 @@ function validateForm(values: FormValues) {
 
 export default function LeadForm({
   className,
-  title = "Plan Your Activation",
-  subtitle = "Let’s Build Your Activation Campaign.",
+  title = "Plan Your OOH Campaign",
+  subtitle = "Free outdoor strategy. Delivered in 24 hours.",
   buttonText = "Get My Free Plan →",
   buttonclassName ="",
   bottomText = "Free plan delivered in 24 hours · No commitment · WhatsApp or email — your choice",
@@ -181,26 +179,6 @@ export default function LeadForm({
           ) : null}
         </div>
 
-                  {/* Brand / Company */}
-        <div className="space-y-1.5">
-          <label
-            htmlFor="brand"
-            className="text-sm font-medium text-foreground"
-          >
-            BRAND/Company
-          </label>
-
-          <input
-            id="brand"
-            name="brand"
-            value={values.brand}
-            onChange={handleChange}
-            placeholder="Your Brand or Company"
-            autoComplete="organization"
-            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          />
-        </div>
-
         {/* Phone + Email */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="space-y-1.5">
@@ -256,7 +234,7 @@ export default function LeadForm({
           </div>
         </div>
 
-        {/* City */}
+        {/* City
         <div className="space-y-1.5">
           <label
             htmlFor="city"
@@ -286,7 +264,7 @@ export default function LeadForm({
           <p className="rounded-md border border-destructive/20 bg-destructive/5 px-3 py-2 text-sm text-destructive">
             {errors.submit}
           </p>
-        ) : null}
+        ) : null} */}
 
         <Button
           type="submit"

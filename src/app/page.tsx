@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, GraduationCap, ShieldCheck, Star,} from "lucide-react";
+import { ArrowRight, GraduationCap, Italic, ShieldCheck, Star,} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { PanelTop,Truck,MonitorPlay,TrainFront,Waypoints,TentTree,TvMinimal,Zap,Mail,} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -71,11 +71,11 @@ export default function LandingPage() {
                 {/* <Badge className="mb-4 border-none bg-secondary px-4 py-1 text-sm text-white shadow-[0_0_18px_rgba(219,52,54,0.55)] animate-pulse">
                   Admissions Open 2026-27
                 </Badge> */}
-                <h1 className="font-headline text-3xl leading-tight text-secondary drop-shadow-[0_4px_16px_rgba(0,0,0,0.45)] md:text-5xl">
+                <h1 className="font-headline font-medium text-3xl leading-tight text-secondary drop-shadow-[0_4px_16px_rgba(0,0,0,0.45)] md:text-5xl">
                   Bengaluru Passes Your Hoarding Every Day. 
                   <br />Does It Stop for Yours?
                 </h1>
-                <p className="max-w-xl text-xl text-white">
+                <p className="max-w-xl text-xl text-white font-light">
                   Strategic hoardings, metro branding, skywalk ads and transit campaigns across 
                   Bengaluru's highest-footfall corridors — MG Road, ORR, Whitefield, Koramangala, 
                   Hebbal. <br /> Built to stop, register, and sell.
