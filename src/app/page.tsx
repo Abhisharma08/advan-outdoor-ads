@@ -183,10 +183,8 @@ export default function LandingPage() {
             }
                 centered={false}
                 />
-                <p className="text-lg text-slate-900 italic">
-                  The wrong location, wrong size, wrong timing - and ₹2 lakhs in hoarding spend delivers
-                  nothing but a receipt. 
-                  <br /> At AD Vantage, every placement is driven by footfall data, audience
+                <p className="text-lg text-slate-900 italic"> 
+                  At AD Vantage, every placement is driven by footfall data, audience
                   profiling, and one question: 
                   <br />  <span className="font-bold text-secondary">where is your exact consumer, and what are they thinking
                   when they pass your ad?</span>
@@ -207,10 +205,10 @@ export default function LandingPage() {
                 <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">
                   We don't book ad spaces. We engineer outdoor brand presence.
                 </p>
-                <p className="mt-2 text-lg leading-relaxed text-slate-900 italic ">
+                {/* <p className="mt-2 text-lg leading-relaxed text-slate-900 italic ">
                   From day one, every outdoor campaign is designed around a single outcome: 
                   your consumer sees your brand, registers it, and recalls it at the point of purchase.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -221,7 +219,7 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
               <div className="space-y-6">
                 <SectionHeader
-                  title={<span className="text-4xl text-primary">50,000 People Drive Past MG Road Every Day. <br />How Many Saw Your Brand?</span>}
+                  title={<span className="text-4xl text-primary leading-[1.4]">50,000 People Drive Past MG Road Daily. <br />How Many Saw Your Brand?</span>}
                   subtitle=""
                   centered={false}
                 />
@@ -523,32 +521,32 @@ export default function LandingPage() {
               <p className="mx-auto max-w-3xl text-base italic leading-loose text-slate-900 md:text-lg">
                 Bengaluru's prime hoarding locations — MG Road, Outer Ring Road, Whitefield flyovers — book 4–6 weeks in advance. 
                <br />  Q3 2026 planning is already underway.
-              <br /> 3 of 5 new campaign slots are confirmed. Share your brief now — we respond with site availability and a custom strategy in 24 hours.
+
               </p>
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
 
-              <ScrollToLeadButton
+              {/* <ScrollToLeadButton
                 variant="outline"
                 size="lg"
                 className="h-14 border-primary px-10 text-lg text-primary hover:bg-primary/5 sm:w-auto"
               >
                 See Available Sites →
-              </ScrollToLeadButton>
+              </ScrollToLeadButton> */}
               <ScrollToLeadButton
                 size="lg"
                 className="h-14  bg-secondary px-10 text-lg font-bold text-white hover:bg-secondary/90 sm:w-auto"
               >
-              Check My Q3 Slot
+              Get Free OOH Plan
               </ScrollToLeadButton>
 
-              <ScrollToLeadButton
+              {/* <ScrollToLeadButton
                 variant="outline"
                 size="lg"
                 className="h-14 border-primary px-10 text-lg text-primary hover:bg-primary/5 sm:w-auto"
               >
                 WhatsApp Us Now 
-              </ScrollToLeadButton>
+              </ScrollToLeadButton> */}
             </div>
               <p className="text-xs text-muted-foreground italic text-slate-600">
               Takes 90 seconds to share your brief. We respond the same day.
