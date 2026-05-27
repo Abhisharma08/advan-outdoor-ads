@@ -1,9 +1,5 @@
 'use server';
 
-/**
- * Server Action to submit lead data to HubSpot CRM.
- * Requires HUBSPOT_ACCESS_TOKEN environment variable.
- */
 export async function submitToHubSpot(data: {
   name: string;
   email: string;
@@ -41,6 +37,12 @@ export async function submitToHubSpot(data: {
     if (!response.ok) {
       const errorData = await response.json();
       console.error('HubSpot API Error:', errorData);
+      
+      // Handle duplicate email gracefully
+      if (errorData.message?.includes('Contact already exists')) {
+        return { success: true }; // Treat as success - contact exists
+      }
+      
       return { success: false, error: errorData.message || 'Failed to sync with CRM.' };
     }
 
