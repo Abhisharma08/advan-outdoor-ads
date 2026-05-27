@@ -24,7 +24,7 @@ type LeadFormProps = {
   subtitle?: string
   buttonText?: string
   bottomText?: React.ReactNode
-  buttonclassName?: string
+  buttonClassName?: string
 }
 
 const defaultValues: FormValues = {
@@ -51,10 +51,6 @@ function validateForm(values: FormValues) {
     errors.email = "Please enter a valid email address."
   }
 
-  if (values.city.trim().length < 2) {
-    errors.city = "Please enter your city."
-  }
-
   return errors
 }
 
@@ -63,7 +59,7 @@ export default function LeadForm({
   title = "Plan Your OOH Campaign",
   subtitle = "Free outdoor strategy. Delivered in 24 hours.",
   buttonText = "Get My Free Plan →",
-  buttonclassName ="",
+  buttonClassName = "",
   bottomText = "Free plan delivered in 24 hours · No commitment · WhatsApp or email — your choice",
 }: LeadFormProps) {
   const [values, setValues] = useState<FormValues>(defaultValues)
@@ -115,6 +111,11 @@ export default function LeadForm({
 
       if (!result.success) {
         console.warn("CRM Sync Issue:", result.error)
+        setErrors({
+          submit: "Failed to sync with CRM. Please try again or contact us directly.",
+        })
+        setIsSubmitting(false)
+        return
       }
 
       router.push("/thank-you")
@@ -234,41 +235,15 @@ export default function LeadForm({
           </div>
         </div>
 
-        {/* City
-        <div className="space-y-1.5">
-          <label
-            htmlFor="city"
-            className="text-sm font-medium text-foreground"
-          >
-            City
-          </label>
-
-          <input
-            id="city"
-            name="city"
-            value={values.city}
-            onChange={handleChange}
-            placeholder="Your City"
-            autoComplete="address-level2"
-            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          />
-
-          {errors.city ? (
-            <p className="text-sm text-destructive">
-              {errors.city}
-            </p>
-          ) : null}
-        </div>
-
         {errors.submit ? (
           <p className="rounded-md border border-destructive/20 bg-destructive/5 px-3 py-2 text-sm text-destructive">
             {errors.submit}
           </p>
-        ) : null} */}
+        ) : null}
 
         <Button
           type="submit"
-          className={`h-14 w-full bg-secondary text-lg font-bold text-white hover:bg-secondary/90 ${buttonclassName}`}
+          className={`h-14 w-full bg-secondary text-lg font-bold text-white hover:bg-secondary/90 ${buttonClassName}`}
           disabled={isSubmitting}
         >
           {isSubmitting ? (
