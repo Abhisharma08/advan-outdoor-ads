@@ -48,12 +48,14 @@ export default function ThankYouPage() {
 
           <div className="pt-6 border-t space-y-6">
             <div className="flex justify-center">
-              <Button asChild variant="outline" className="gap-2 border-primary text-primary hover:bg-primary/5">
-                <a href="/">
-                  <ArrowLeft className="h-4 w-4" />
-                  Back to Homepage
-                </a>
-              </Button>
+                <Button asChild variant="outline" className="gap-2 border-primary text-primary hover:bg-primary/5">
+                  <Link href="/" prefetch={false}>
+                    <span className="inline-flex items-center gap-2">
+                      <ArrowLeft className="h-4 w-4" />
+                      Back to Homepage
+                    </span>
+                  </Link>
+                </Button>
             </div>
           </div>
         </div>
