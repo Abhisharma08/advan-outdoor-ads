@@ -56,9 +56,9 @@ function validateForm(values: FormValues) {
 
 export default function LeadForm({
   className,
-  title = "Plan Your OOH Campaign",
-  subtitle = "Free outdoor strategy. Delivered in 24 hours.",
-  buttonText = "Get My Free Plan →",
+  title = "Get Hoarding Rates and Availability",
+  subtitle = "We will contact you within 2 hours with available sites and rates.",
+  buttonText = "Get Rates and Site Options →",
   buttonClassName = "",
   bottomText = "Free plan delivered in 24 hours · No commitment · WhatsApp or email — your choice",
 }: LeadFormProps) {
@@ -233,6 +233,26 @@ export default function LeadForm({
               </p>
             ) : null}
           </div>
+        </div>
+
+        {/* Area in Bengaluru */}
+        <div className="space-y-1.5">
+          <label
+            htmlFor="city"
+            className="text-sm font-medium text-foreground"
+          >
+            Your Area in Bengaluru
+          </label>
+
+          <input
+            id="city"
+            name="city"
+            value={values.city}
+            onChange={handleChange}
+            placeholder="Koramangala/Whitefield/MG Road/HSR/Other"
+            autoComplete="address-level2"
+            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          />
         </div>
 
         {errors.submit ? (

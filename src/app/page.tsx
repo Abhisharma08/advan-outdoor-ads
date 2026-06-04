@@ -72,13 +72,12 @@ export default function LandingPage() {
                   Admissions Open 2026-27
                 </Badge> */}
                 <h1 className="font-headline font-medium text-3xl leading-tight text-secondary drop-shadow-[0_4px_16px_rgba(0,0,0,0.45)] md:text-5xl">
-                  Bengaluru Passes Your Hoarding Every Day. 
-                  <br />Does It Stop for Yours?
+                  Outdoor Advertising in Bengaluru.
+                  <br />Hoardings. Metro. Transit.
                 </h1>
                 <p className="max-w-xl text-xl text-white font-light">
-                  Strategic hoardings, metro branding, skywalk ads and transit campaigns across 
-                  Bengaluru's highest-footfall corridors — MG Road, ORR, Whitefield, Koramangala, 
-                  Hebbal. <br /> Built to stop, register, and sell.
+                  We help businesses book hoarding sites, metro ads, van campaigns, and outdoor spaces across Bengaluru. 
+                  < br />Tell us your area and budget — we will find the right site for you.
                   </p>
                 <div className="flex max-w-2xl flex-wrap gap-2">
                   {/* {[
@@ -117,30 +116,27 @@ export default function LandingPage() {
                 <div className="grid grid-cols-2 divide-x divide-y divide-white/10 md:grid-cols-4 md:divide-y-0">
 
                   <div className="flex flex-col items-center justify-center px-4 py-4 text-center">
-                    <span className="text-xl font-bold text-white">200+</span>
+                    
                     <span className="text-sm font-medium text-secondary">
-                      Campaigns
+                      200+ < br />Campaigns Done
                     </span>
                   </div>
 
                   <div className="flex flex-col items-center justify-center px-4 py-4 text-center">
-                    <span className="text-xl font-bold text-white">50+</span>
                     <span className="text-sm font-medium text-secondary">
-                      OOF Formats
+                      All Bengaluru Areas Covered
                     </span>
                   </div>
 
                   <div className="flex flex-col items-center justify-center px-4 py-4 text-center">
-                    <span className="text-xl font-bold text-white">48 Hr</span>
                     <span className="text-sm font-medium text-secondary">
-                      Plan Turnaround
+                      Response < br /> Within 2 Hours
                     </span>
                   </div>
 
                   <div className="flex flex-col items-center justify-center px-4 py-4 text-center">
-                    <span className="text-xl font-bold text-white">Zero</span>
                     <span className="text-sm font-medium text-secondary">
-                      Middlemen
+                      No Hidden Charges
                     </span>
                   </div>
 
@@ -176,7 +172,7 @@ export default function LandingPage() {
               </div>
               <div className="space-y-6">
                 <SectionHeader
-                  title="Your Billboard Is Up. But Is Anyone Actually Seeing It?"
+                  title="Where Do You Want to Advertise in Bengaluru?"
                   subtitle={
                 <>
                 </>
@@ -184,17 +180,15 @@ export default function LandingPage() {
                 centered={false}
                 />
                 <p className="text-lg text-slate-900 italic"> 
-                  At AD Vantage, every placement is driven by footfall data, audience
-                  profiling, and one question: 
-                  <br />  <span className="font-bold text-secondary">where is your exact consumer, and what are they thinking
-                  when they pass your ad?</span>
+                  We have hoarding sites, metro station spaces, van routes, and digital screens across all major areas of Bengaluru. 
+                  < br /> We will show you exactly which sites are available in your target area, with photos, dimensions, and current rates.
 
                 </p>
                 <ul className="space-y-4">
                   {[
-                    "Right location over cheapest location - because placement is everything in OOH",
-                    "Real footfall data over assumptions - we map audiences before we book sites",
-                    "Recall-engineered placements - not just visible, but impossible to ignore",
+                    "We show you available sites in your area with photos before you decide",
+                    "Clear pricing with no hidden charges — what we quote is what you pay",
+                    "Our team handles booking, permissions, and installation end to end",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 font-medium text-primary">
                       <ShieldCheck className="h-6 w-6 text-secondary" />
@@ -203,12 +197,8 @@ export default function LandingPage() {
                   ))}
                 </ul>
                 <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">
-                  We don't book ad spaces. We engineer outdoor brand presence.
+                  We find the site. You approve it. We book it. Simple.
                 </p>
-                {/* <p className="mt-2 text-lg leading-relaxed text-slate-900 italic ">
-                  From day one, every outdoor campaign is designed around a single outcome: 
-                  your consumer sees your brand, registers it, and recalls it at the point of purchase.
-                </p> */}
               </div>
             </div>
           </div>
@@ -219,19 +209,19 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
               <div className="space-y-6">
                 <SectionHeader
-                  title={<span className="text-4xl text-primary leading-[1.4]">50,000 People Drive Past MG Road Daily. <br />How Many Saw Your Brand?</span>}
+                  title={<span className="">Your Customer Is Outside.<br /> Are They Seeing Your Brand?</span>}
                   subtitle=""
                   centered={false}
                 />
                 <p className="text-lg text-slate-900 italic">
-                  Bengaluru's roads, metro lines, skywalks, and apartment corridors are the most underused brand channels in the city. 
-                  While everyone bids on the same Google keywords, the Bengaluru street is wide open.
+                  Every day, thousands of people walk past the streets, malls, metro stations, and RWAs in Bengaluru. 
+                  A well-placed outdoor ad puts your brand in front of these people — repeatedly, every single day.                  
                   </p>
                 <ul className="space-y-4">
                   {[
-                    "A prime Bengaluru hoarding on ORR or MG Road delivers 40,000–80,000 daily impressions - location-verified, not estimated",
-                    " Namma Metro branding reaches 4.5 lakh+ commuters daily - captive audience, zero skip button",
-                    "Skywalk ads hold pedestrian attention for 8–12 seconds - 8x longer than the average digital ad view",
+                    "A hoarding on a busy Bengaluru road is seen by 40,000 to 80,000 people every day",
+                    "Metro station ads reach more than 4 lakh commuters daily on Namma Metro",
+                    "People see your outdoor ad again and again — this is how your brand gets remembered",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 font-medium text-primary">
                       <ShieldCheck className="h-6 w-6 text-secondary" />
@@ -239,9 +229,9 @@ export default function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">Outdoor Presence = Purchase Recall</p>
+                <p className="mt-4 inline-block border-b-2 border-secondary pb-1 text-lg font-bold text-primary">Outdoor advertising = your brand, seen every day, by the right people.</p>
                 <p className="text-lg text-slate-900 italic">
-                  The brand that owns the Bengaluru street corner owns the consumer's mind at the moment of purchase.
+                  When someone walks into your shop or visits your website, they may have already seen your hoarding 10 times. That is how outdoor advertising works
                 </p>
               </div>
               <div className="relative h-96 overflow-hidden rounded-2xl shadow-2xl">
@@ -257,44 +247,102 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="w-full bg-white py-20" style={deferredSectionStyle}>
-          <div className="container mx-auto max-w-7xl px-4">
-            <SectionHeader
-              title="Nine Ways Your Brand Owns Bengaluru."
-              subtitle=""
-            />
-            <p className="mb-10 max-w-2xl text-lg text-slate-900 italic text-center mx-auto">
-              Every format. Every zone. One city. Your brand, impossible to miss.
-              </p>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {[
-              { icon: <PanelTop />, title: "Outdoor Hoardings", desc: "The Bengaluru Skyline Your Brand Can Own" },
-              { icon: <Truck />, title: "Van & Roadshow Advertising", desc: "Every Pin Code. Every Market. Your Brand." },
-              { icon: <MonitorPlay />, title: "Digital Signage", desc: "Your Brand Moves On Bengaluru's Screens." },
-              { icon: <TrainFront />, title: "Metro Branding", desc: "4.5 Lakh Commuters. Your Brand. Every Day." },
-              { icon: <Waypoints />, title: "Skywalk Advertising", desc: "8 Seconds of Attention. No Scroll. No Skip." },
-              { icon: <TentTree />, title: "Exhibition & Venue Branding", desc: "Own the Room Before You Speak." },
-              { icon: <TvMinimal />, title: "Apartment Digital Screens", desc: "Your Brand in 500 Homes. Before Breakfast." },
-              { icon: <Zap />, title: "Guerilla Marketing", desc: "The Campaign They Screenshot and Share." },
-              { icon: <Mail />, title: "Flyer & Pamphlet Distribution", desc: "Direct to Door. Direct Response." },
-            ].map((item) => (
-                <div
-                  key={item.title}
-                  className="flex gap-4 rounded-xl border border-white/60 bg-white/80 p-6 backdrop-blur-sm transition-all hover:border-secondary/100 hover:bg-white"
-                >
-                  <div className="h-fit rounded-lg bg-primary/5 p-3 text-primary">
-                    {item.icon}
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="font-headline text-lg text-secondary font-bold">{item.title}</h4>
-                    <p className="text-base text-black text-primary">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+<section className="w-full bg-white py-20" style={deferredSectionStyle}>
+  <div className="container mx-auto max-w-7xl px-4">
+    <SectionHeader
+      title="Nine Ways Your Brand Owns Bengaluru."
+      subtitle=""
+    />
 
+    <p className="mb-10 max-w-2xl text-center mx-auto text-lg italic text-slate-900">
+      Every format. Every zone. One city. Your brand, impossible to miss.
+    </p>
+
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    {[
+      {
+        icon: <PanelTop />,
+        title: "Outdoor Hoardings",
+        desc: "The Bengaluru Skyline Your Brand Can Own",
+      },
+      {
+        icon: <Truck />,
+        title: "Van & Roadshow Advertising",
+        desc: "Every Pin Code. Every Market. Your Brand.",
+      },
+      {
+        icon: <MonitorPlay />,
+        title: "Digital Signage",
+        desc: "Your Brand Moves On Bengaluru's Screens.",
+      },
+      {
+        icon: <TrainFront />,
+        title: "Metro Branding",
+        desc: "4.5 Lakh Commuters. Your Brand. Every Day.",
+      },
+      {
+        icon: <Waypoints />,
+        title: "Skywalk Advertising",
+        desc: "8 Seconds of Attention. No Scroll. No Skip.",
+      },
+      {
+        icon: <TentTree />,
+        title: "Exhibition & Venue Branding",
+        desc: "Own the Room Before You Speak.",
+      },
+      {
+        icon: <TvMinimal />,
+        title: "Apartment Digital Screens",
+        desc: "Your Brand in 500 Homes. Before Breakfast.",
+      },
+      {
+        icon: <Zap />,
+        title: "Guerilla Marketing",
+        desc: "The Campaign They Screenshot and Share.",
+      },
+      {
+        icon: <Mail />,
+        title: "Flyer & Pamphlet Distribution",
+        desc: "Direct to Door. Direct Response.",
+      },
+    ].map((item) => (
+      <div
+        key={item.title}
+        className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        {/* Title + Icon */}
+        <div className="p-5 pb-4">
+          <div className="flex items-center justify-center gap-3">
+            <div className="rounded-lg bg-primary/5 p-2 text-primary">
+              {item.icon}
+            </div>
+
+            <h4 className="font-headline text-xl font-bold text-secondary">
+              {item.title}
+            </h4>
+          </div>
+        </div>
+
+        {/* Image */}
+        <div className="relative aspect-[4/3] w-full">
+          <img
+            src="https://picsum.photos/seed/placeholder/800/600"
+            alt={item.title}
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+        {/* Description */}
+        <div className="p-5">
+          <p className="text-center text-base text-slate-700">
+            {item.desc}
+          </p>
+        </div>
+      </div>
+    ))}
+    </div>
+  </div>
+</section>
         {/* <section className="w-full bg-primary py-20 text-white" style={deferredSectionStyle}>
           <div className="container mx-auto max-w-7xl px-4">
             <SectionHeader
@@ -372,12 +420,12 @@ export default function LandingPage() {
       light
     />
 
-    <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-6">
+    <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-2">
 
       {[
         {
-          tag: "MAXIMUM VISIBILITY",
-          title: "Own the Bengaluru Skyline",
+          tag: "BEST FOR: RETAIL, REAL ESTATE, LOCAL BRANDS",
+          title: "Hoarding Package",
           desc: "",
           features: [
             "Prime sites: MG Road, ORR, Whitefield, Hebbal, Koramangala",
@@ -386,12 +434,12 @@ export default function LandingPage() {
             "Installation, maintenance and site management - fully handled",
             "Post-campaign photo report with impression documentation",
           ],
-          cta: "Plan My Hoarding",
+          cta: "Enquire for Hoarding Rates",
         },
 
         {
-          tag: "CITY-WIDE REACH",
-          title: "Every Street. Every Market. Your Brand.",
+          tag: "BEST FOR: LOCAL CAMPAIGNS, PRODUCT LAUNCHES",
+          title: "Van and Transit Advertising",
           desc: "",
           features: [
             "Moving van campaigns across all Bengaluru zones and pin codes",
@@ -400,12 +448,12 @@ export default function LandingPage() {
             "Minimum 8-hour daily street presence per campaign vehicle",
             "Ideal for product launches, offers, and local market penetration",
           ],
-          cta: "Plan My Transit Campaign",
+          cta: "Enquire for Van Ad Rates",
         },
 
         {
-          tag: "HIGHEST DAILY FOOTFALL",
-          title: "4.5L Commuters. Zero Skip Rate.",
+          tag: "BEST FOR: D2C, BANKS, APPS, FMCG BRANDS",
+          title: "Metro and Skywalk Advertising",
           desc: "",
           features: [
             "Namma Metro: platform, concourse, and train wrap formats available",
@@ -414,12 +462,12 @@ export default function LandingPage() {
             "Premium urban audience - working professionals, shoppers, students",
             "Multi-week booking available with creative refresh option",
           ],
-          cta: "Book Metro + Skywalk Slots",
+          cta: "Enquire for Metro Ad Rates ",
         },
 
         {
-          tag: "DYNAMIC + HIGH RECALL",
-          title: "Your Brand Moves. So Do Our Screens.",
+          tag: "BEST FOR: MALLS, OFFICES, PREMIUM BRANDS",
+          title: "Full Outdoor Advertising Package",
           desc: "",
           features: [
             "Digital OOH across malls, IT parks, commercial zones in Bengaluru",
@@ -428,56 +476,44 @@ export default function LandingPage() {
             "Multiple creatives, daypart targeting, one unified campaign",
             "Detailed impression data per screen delivered post-campaign",
           ],
-          cta: "Plan My Digital OOH",
+          cta: "Get a Full Package Quote",
         },
 
-        {
-          tag: "COMPLETE OUTDOOR PRESENCE",
-          title: "Bengaluru Sees You. Everywhere.",
-          desc: "",
-          features: [
-            "Hoarding + Metro + Van + Digital - one coordinated programme",
-            "City-wide multi-format coverage under a single strategy",
-            "Single point of contact from brief to post-campaign report",
-            "Weekly execution updates with live site photos",
-            "Project-based or monthly retainer - your engagement model",
-          ],
-          cta: "Get My Full OOH Strategy",
-        },
-
-      ].map((item, index) => (
+      ].map((item) => (
         <div
           key={item.title}
-          className={`group flex h-full flex-col rounded-2xl border border-white/10 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/15 ${
-            index < 3
-              ? "xl:col-span-2"
-              : index === 3
-              ? "xl:col-start-2 xl:col-span-2"
-              : "xl:col-span-2"
-          }`}
+          className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/15"
         >
-
           {/* TOP */}
           <div className="p-5">
             <div className="mb-4 inline-flex rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-secondary">
               {item.tag}
             </div>
 
-            <h3 className="mb-3 text-xl font-bold leading-tight text-white group-hover:text-secondary">
+            <h3 className="mb-3 text-2xl font-bold leading-tight text-white group-hover:text-secondary">
               {item.title}
             </h3>
 
             <p className="text-sm leading-relaxed text-white/70">
               {item.desc}
             </p>
+
+            {/* IMAGE */}
+            <div className="mt-5 overflow-hidden rounded-xl">
+              <img
+                src="https://picsum.photos/seed/placeholder/800/600"
+                alt={item.title}
+                className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
 
           {/* FEATURES */}
-          <div className="flex-1 space-y-3 px-5 pb-5">
+          <div className="flex-1 space-y-1.5 px-5 pb-5">
             {item.features.map((feature) => (
               <div
                 key={feature}
-                className="flex items-start gap-2 border-b border-white/10 pb-3"
+                className="flex items-start gap-2 border-b border-white/10 pb-1.5"
               >
                 <div className="mt-1 flex h-4 w-4 items-center justify-center rounded-full bg-secondary text-[10px] font-bold text-white">
                   ✓
@@ -496,7 +532,6 @@ export default function LandingPage() {
               {item.cta} →
             </ScrollToLeadButton>
           </div>
-
         </div>
       ))}
     </div>
@@ -504,13 +539,13 @@ export default function LandingPage() {
 </section>
 
         <section
-          className="relative w-full overflow-hidden bg-white py-24"
+          className="relative w-full overflow-hidden bg-white py-12"
           style={deferredSectionStyle}
         >
           <SectionHeader
             title={
               <>
-                Q3 Sites Are Being Confirmed. Best Locations Go First.  
+                Good Sites in Bengaluru Get Booked Fast.  
               </>
             }
             subtitle=""
@@ -519,39 +554,18 @@ export default function LandingPage() {
             <div className="container relative z-10 mx-auto max-w-7xl space-y-8 px-4 text-center">
 
               <p className="mx-auto max-w-3xl text-base italic leading-loose text-slate-900 md:text-lg">
-                Bengaluru's prime hoarding locations — MG Road, Outer Ring Road, Whitefield flyovers — book 4–6 weeks in advance. 
-               <br />  Q3 2026 planning is already underway.
+                Bengaluru's prime hoarding locations — MG Road, Outer Ring Road, Whitefield flyovers
 
               </p>
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-
-              {/* <ScrollToLeadButton
-                variant="outline"
-                size="lg"
-                className="h-14 border-primary px-10 text-lg text-primary hover:bg-primary/5 sm:w-auto"
-              >
-                See Available Sites →
-              </ScrollToLeadButton> */}
               <ScrollToLeadButton
                 size="lg"
                 className="h-14  bg-secondary px-10 text-lg font-bold text-white hover:bg-secondary/90 sm:w-auto"
               >
-              Get Free OOH Plan
+              Check What's Available →
               </ScrollToLeadButton>
-
-              {/* <ScrollToLeadButton
-                variant="outline"
-                size="lg"
-                className="h-14 border-primary px-10 text-lg text-primary hover:bg-primary/5 sm:w-auto"
-              >
-                WhatsApp Us Now 
-              </ScrollToLeadButton> */}
             </div>
-              <p className="text-xs text-muted-foreground italic text-slate-600">
-              Takes 90 seconds to share your brief. We respond the same day.
-              </p>
-
           </div>
         </section>
 
@@ -565,32 +579,26 @@ export default function LandingPage() {
               <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                 <div className="space-y-6">
                   <h2 className="font-headline text-4xl text-primary mb-2 font-headline font-bold">
-                    That Junction in Bengaluru. Your Consumer Passes It Daily. Does Your Brand?
+                    Ready to Put Your Brand on Bengaluru's Streets?
                   </h2>
 
                   <p className="text-lg text-muted-foreground">
-                    Share your brief. Get a free outdoor strategy — hoarding locations, format
-                    recommendations, reach estimate, and budget guide. In 24 hours. At zero cost.
+                    Tell us your area, your business type, and your rough budget. 
+                    We will call you within 2 hours with available hoarding sites, photos, and rates. No paperwork. No commitment. Just options.
                     </p>
-                    <p>
-                    <br></br><span className="font-bold text-secondary text-xl">In 24 hours. At zero cost.</span>
-                  </p>
                   <ScrollToLeadButton
                 size="lg"
                 className="h-14 w-full bg-secondary px-10 text-lg font-bold text-white hover:bg-secondary/90 sm:w-auto italic "
               >
-              Get My Free OOH Plan →
+              Get My Free Site Options →
               </ScrollToLeadButton>
                 </div>
 
               <LeadForm
-              title="Free OOH Plan. 24 Hours."
+              title="Free Site Options. Within 2 Hours."
               subtitle="Share your brief and get a custom activation strategy within 24 hours."
-              buttonText="Send Brief — Get My Plan →"
+              buttonText="Get My Site Options →"
               buttonclassName="italic tracking-wide"
-              bottomText={ <>
-                Free custom plan in 24 working hours.
-              </> }
             /> 
               </div>
             </div>
