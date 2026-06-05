@@ -263,46 +263,55 @@ export default function LandingPage() {
       {
         icon: <PanelTop />,
         title: "Outdoor Hoardings",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652157/Outdoor_3_t2kxm3.png",
         desc: "The Bengaluru Skyline Your Brand Can Own",
       },
       {
         icon: <Truck />,
         title: "Van & Roadshow Advertising",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652150/Van.jpg_zbdw1k.jpg",
         desc: "Every Pin Code. Every Market. Your Brand.",
       },
       {
         icon: <MonitorPlay />,
         title: "Digital Signage",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652149/Digital_Signage_xvbuw5.png",
         desc: "Your Brand Moves On Bengaluru's Screens.",
       },
       {
         icon: <TrainFront />,
         title: "Metro Branding",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652143/Metro_Branding_p1afy3.png",
         desc: "4.5 Lakh Commuters. Your Brand. Every Day.",
       },
       {
         icon: <Waypoints />,
         title: "Skywalk Advertising",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652132/Untitled_kbcx9g.png",
         desc: "8 Seconds of Attention. No Scroll. No Skip.",
       },
       {
         icon: <TentTree />,
         title: "Exhibition & Venue Branding",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652133/Exhibition.jpg_uv0me2.jpg",
         desc: "Own the Room Before You Speak.",
       },
       {
         icon: <TvMinimal />,
         title: "Apartment Digital Screens",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652123/Apartment_vxjedl.png",
         desc: "Your Brand in 500 Homes. Before Breakfast.",
       },
       {
         icon: <Zap />,
         title: "Guerilla Marketing",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652098/Guirella_hakfoy.png",
         desc: "The Campaign They Screenshot and Share.",
       },
       {
         icon: <Mail />,
         title: "Flyer & Pamphlet Distribution",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652128/Flyer_hz7orn.png",
         desc: "Direct to Door. Direct Response.",
       },
     ].map((item) => (
@@ -326,7 +335,7 @@ export default function LandingPage() {
         {/* Image */}
         <div className="relative aspect-[4/3] w-full">
           <img
-            src="https://picsum.photos/seed/placeholder/800/600"
+            src={item.image}
             alt={item.title}
             className="h-full w-full object-cover"
           />
@@ -426,6 +435,7 @@ export default function LandingPage() {
         {
           tag: "BEST FOR: RETAIL, REAL ESTATE, LOCAL BRANDS",
           title: "Hoarding Package",
+          image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652165/Hoarding_Package_bwysia.png",
           desc: "",
           features: [
             "Prime sites: MG Road, ORR, Whitefield, Hebbal, Koramangala",
@@ -440,6 +450,7 @@ export default function LandingPage() {
         {
           tag: "BEST FOR: LOCAL CAMPAIGNS, PRODUCT LAUNCHES",
           title: "Van and Transit Advertising",
+          image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652168/Van_and_transit_svylac.png",
           desc: "",
           features: [
             "Moving van campaigns across all Bengaluru zones and pin codes",
@@ -454,6 +465,7 @@ export default function LandingPage() {
         {
           tag: "BEST FOR: D2C, BANKS, APPS, FMCG BRANDS",
           title: "Metro and Skywalk Advertising",
+          image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652162/Metro_dngih8.png",
           desc: "",
           features: [
             "Namma Metro: platform, concourse, and train wrap formats available",
@@ -468,6 +480,7 @@ export default function LandingPage() {
         {
           tag: "BEST FOR: MALLS, OFFICES, PREMIUM BRANDS",
           title: "Full Outdoor Advertising Package",
+          image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652157/Outdoor_3_t2kxm3.png",
           desc: "",
           features: [
             "Digital OOH across malls, IT parks, commercial zones in Bengaluru",
@@ -501,7 +514,7 @@ export default function LandingPage() {
             {/* IMAGE */}
             <div className="mt-5 overflow-hidden rounded-xl">
               <img
-                src="https://picsum.photos/seed/placeholder/800/600"
+                src={item.image}
                 alt={item.title}
                 className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
