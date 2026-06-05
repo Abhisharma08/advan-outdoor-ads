@@ -11,7 +11,7 @@ export default function ThankYouPage() {
       {/* Simple Header */}
       <nav className="bg-white border-b h-20 flex items-center w-full">
         <div className="container mx-auto px-4 max-w-7xl w-full">
-          <Link href="/" prefetch={false}>
+          <Link href="/outdoor-advertising-bengaluru" prefetch={false}>
             <Image 
               src={LOGO_URL} 
               alt="INSD Logo" 
