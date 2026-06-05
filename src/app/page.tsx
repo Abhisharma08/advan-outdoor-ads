@@ -263,7 +263,7 @@ export default function LandingPage() {
       {
         icon: <PanelTop />,
         title: "Outdoor Hoardings",
-        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652157/Outdoor_3_t2kxm3.png",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652139/Outdoor_2_jvjuja.png",
         desc: "The Bengaluru Skyline Your Brand Can Own",
       },
       {
