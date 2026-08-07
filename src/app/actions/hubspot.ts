@@ -4,6 +4,7 @@ export async function submitToHubSpot(data: {
   name: string;
   email: string;
   phone: string;
+  company: string;
   lead_source: string;
 }) {
   const accessToken = process.env.HUBSPOT_ACCESS_TOKEN;
@@ -29,6 +30,7 @@ export async function submitToHubSpot(data: {
           firstname: firstname,
           lastname: lastname || '',
           phone: data.phone,
+          company: data.company,
           lead_source: data.lead_source,
         },
       }),

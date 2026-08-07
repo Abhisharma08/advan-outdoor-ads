@@ -11,6 +11,7 @@ type FormValues = {
   email: string
   phone: string
   city: string
+  company: string
   lead_source: string
 }
 
@@ -32,6 +33,7 @@ const defaultValues: FormValues = {
   email: "",
   phone: "",
   city: "",
+  company: "",
   lead_source: "Outdoor Ads lp",
 }
 
@@ -251,6 +253,26 @@ export default function LeadForm({
             onChange={handleChange}
             placeholder="Koramangala/Whitefield/MG Road/HSR/Other"
             autoComplete="address-level2"
+            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          />
+        </div>
+
+        {/* Company Name */}
+        <div className="space-y-1.5">
+          <label
+            htmlFor="company"
+            className="text-sm font-medium text-foreground"
+          >
+            Company Name <span className="font-normal text-muted-foreground">(optional)</span>
+          </label>
+
+          <input
+            id="company"
+            name="company"
+            value={values.company}
+            onChange={handleChange}
+            placeholder="Your Company Name"
+            autoComplete="organization"
             className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           />
         </div>
