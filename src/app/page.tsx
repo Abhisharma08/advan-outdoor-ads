@@ -611,7 +611,7 @@ export default function LandingPage() {
               title="Free Site Options. Within 2 Hours."
               subtitle="Share your brief and get a custom activation strategy within 24 hours."
               buttonText="Get My Site Options →"
-              buttonclassName="italic tracking-wide"
+              buttonClassName="italic tracking-wide"
             /> 
               </div>
             </div>

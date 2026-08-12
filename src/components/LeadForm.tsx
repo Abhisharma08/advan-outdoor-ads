@@ -12,6 +12,7 @@ type FormValues = {
   phone: string
   city: string
   company: string
+  designation: string
   lead_source: string
 }
 
@@ -34,6 +35,7 @@ const defaultValues: FormValues = {
   phone: "",
   city: "",
   company: "",
+  designation: "",
   lead_source: "Outdoor Ads lp",
 }
 
@@ -67,6 +69,7 @@ export default function LeadForm({
   const [values, setValues] = useState<FormValues>(defaultValues)
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [step, setStep] = useState(1)
 
   const router = useRouter()
 
@@ -93,6 +96,16 @@ export default function LeadForm({
     })
   }
 
+  function handleNextStep() {
+    const validationErrors = validateForm(values)
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors)
+      return
+    }
+    setErrors({})
+    setStep(2)
+  }
+
   async function handleSubmit(
     event: React.FormEvent<HTMLFormElement>
   ) {
@@ -102,6 +115,7 @@ export default function LeadForm({
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors)
+      setStep(1)
       return
     }
 
@@ -156,149 +170,193 @@ export default function LeadForm({
           value={values.lead_source}
         />
 
-        {/* Name */}
-        <div className="space-y-1.5">
-          <label
-            htmlFor="name"
-            className="text-sm font-medium text-foreground"
-          >
-            Full Name
-          </label>
+        {step === 1 ? (
+          <>
+            {/* Name */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="name"
+                className="text-sm font-medium text-foreground"
+              >
+                Full Name
+              </label>
 
-          <input
-            id="name"
-            name="name"
-            value={values.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            autoComplete="name"
-            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          />
+              <input
+                id="name"
+                name="name"
+                value={values.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                autoComplete="name"
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              />
 
-          {errors.name ? (
-            <p className="text-sm text-destructive">
-              {errors.name}
-            </p>
-          ) : null}
-        </div>
+              {errors.name ? (
+                <p className="text-sm text-destructive">
+                  {errors.name}
+                </p>
+              ) : null}
+            </div>
 
-        {/* Phone + Email */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="space-y-1.5">
-            <label
-              htmlFor="phone"
-              className="text-sm font-medium text-foreground"
+            {/* Phone */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="phone"
+                className="text-sm font-medium text-foreground"
+              >
+                Phone Number
+              </label>
+
+              <input
+                id="phone"
+                name="phone"
+                value={values.phone}
+                onChange={handleChange}
+                placeholder="Your Phone Number"
+                autoComplete="tel"
+                inputMode="numeric"
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              />
+
+              {errors.phone ? (
+                <p className="text-sm text-destructive">
+                  {errors.phone}
+                </p>
+              ) : null}
+            </div>
+
+            {/* Email */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="email"
+                className="text-sm font-medium text-foreground"
+              >
+                Email Address
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value={values.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                autoComplete="email"
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              />
+
+              {errors.email ? (
+                <p className="text-sm text-destructive">
+                  {errors.email}
+                </p>
+              ) : null}
+            </div>
+
+            <Button
+              type="button"
+              onClick={handleNextStep}
+              className={`h-14 w-full mt-4 bg-secondary text-lg font-bold text-white hover:bg-secondary/90 ${buttonClassName}`}
             >
-              Phone Number
-            </label>
+              Continue →
+            </Button>
+          </>
+        ) : (
+          <>
+            <h4 className="font-semibold text-lg text-foreground mb-4">Enter Additional Details</h4>
 
-            <input
-              id="phone"
-              name="phone"
-              value={values.phone}
-              onChange={handleChange}
-              placeholder="Your Phone Number"
-              autoComplete="tel"
-              inputMode="numeric"
-              className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            />
+            {/* Area in Bengaluru */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="city"
+                className="text-sm font-medium text-foreground"
+              >
+                Your Area in Bengaluru
+              </label>
 
-            {errors.phone ? (
-              <p className="text-sm text-destructive">
-                {errors.phone}
+              <input
+                id="city"
+                name="city"
+                value={values.city}
+                onChange={handleChange}
+                placeholder="Koramangala/Whitefield/MG Road/HSR/Other"
+                autoComplete="address-level2"
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              />
+            </div>
+
+            {/* Company Name */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="company"
+                className="text-sm font-medium text-foreground"
+              >
+                Company Name
+              </label>
+
+              <input
+                id="company"
+                name="company"
+                value={values.company}
+                onChange={handleChange}
+                placeholder="Your Company Name"
+                autoComplete="organization"
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              />
+            </div>
+
+            {/* Designation */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="designation"
+                className="text-sm font-medium text-foreground"
+              >
+                Designation
+              </label>
+
+              <input
+                id="designation"
+                name="designation"
+                value={values.designation}
+                onChange={handleChange}
+                placeholder="Your Designation"
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              />
+            </div>
+
+            {errors.submit ? (
+              <p className="rounded-md border border-destructive/20 bg-destructive/5 px-3 py-2 text-sm text-destructive">
+                {errors.submit}
               </p>
             ) : null}
-          </div>
 
-          <div className="space-y-1.5">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium text-foreground"
-            >
-              Email Address
-            </label>
+            <div className="flex gap-4 mt-4">
+              <Button
+                type="button"
+                onClick={() => setStep(1)}
+                variant="outline"
+                className="h-14 flex-1 text-lg font-bold"
+              >
+                Back
+              </Button>
+              <Button
+                type="submit"
+                className={`h-14 flex-[2] bg-secondary text-lg font-bold text-white hover:bg-secondary/90 ${buttonClassName}`}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 animate-spin" />
+                    Processing...
+                  </>
+                ) : (
+                  buttonText
+                )}
+              </Button>
+            </div>
+          </>
+        )}
 
-            <input
-              id="email"
-              name="email"
-              type="email"
-              value={values.email}
-              onChange={handleChange}
-              placeholder="Your Email"
-              autoComplete="email"
-              className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            />
-
-            {errors.email ? (
-              <p className="text-sm text-destructive">
-                {errors.email}
-              </p>
-            ) : null}
-          </div>
-        </div>
-
-        {/* Area in Bengaluru */}
-        <div className="space-y-1.5">
-          <label
-            htmlFor="city"
-            className="text-sm font-medium text-foreground"
-          >
-            Your Area in Bengaluru
-          </label>
-
-          <input
-            id="city"
-            name="city"
-            value={values.city}
-            onChange={handleChange}
-            placeholder="Koramangala/Whitefield/MG Road/HSR/Other"
-            autoComplete="address-level2"
-            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          />
-        </div>
-
-        {/* Company Name */}
-        <div className="space-y-1.5">
-          <label
-            htmlFor="company"
-            className="text-sm font-medium text-foreground"
-          >
-            Company Name <span className="font-normal text-muted-foreground">(optional)</span>
-          </label>
-
-          <input
-            id="company"
-            name="company"
-            value={values.company}
-            onChange={handleChange}
-            placeholder="Your Company Name"
-            autoComplete="organization"
-            className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          />
-        </div>
-
-        {errors.submit ? (
-          <p className="rounded-md border border-destructive/20 bg-destructive/5 px-3 py-2 text-sm text-destructive">
-            {errors.submit}
-          </p>
-        ) : null}
-
-        <Button
-          type="submit"
-          className={`h-14 w-full bg-secondary text-lg font-bold text-white hover:bg-secondary/90 ${buttonClassName}`}
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? (
-            <>
-              <Loader2 className="mr-2 animate-spin" />
-              Processing...
-            </>
-          ) : (
-            buttonText
-          )}
-        </Button>
-
-        <p className="text-center text-xs text-muted-foreground">
+        <p className="text-center text-xs text-muted-foreground mt-4">
           {bottomText}
         </p>
       </form>
