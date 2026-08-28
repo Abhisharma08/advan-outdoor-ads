@@ -299,7 +299,7 @@ export default function LandingPage() {
       {
         icon: <TvMinimal />,
         title: "Apartment Digital Screens",
-        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652123/Apartment_vxjedl.png",
+        image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1787910780/Apartment_c9qiam.png",
         desc: "Your Brand in 500 Homes. Before Breakfast.",
       },
       {
