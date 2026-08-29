@@ -60,7 +60,7 @@ function validateForm(values: FormValues) {
 
 export default function LeadForm({
   className,
-  title = "Get Hoarding Rates and Availability",
+  title = "Check Rates & Availability",
   subtitle = "We will contact you within 2 hours with available sites and rates.",
   buttonText = "Get Rates and Site Options →",
   buttonClassName = "",

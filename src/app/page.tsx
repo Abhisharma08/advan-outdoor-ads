@@ -43,7 +43,7 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center gap-4">
             <ScrollToLeadButton className="bg-secondary px-6 font-bold text-white hover:bg-secondary/90">
-              Get Free OOH Plan
+              Get The Best Price
             </ScrollToLeadButton>
           </div>
         </div>
