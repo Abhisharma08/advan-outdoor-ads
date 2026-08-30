@@ -72,11 +72,11 @@ export default function LandingPage() {
                   Admissions Open 2026-27
                 </Badge> */}
                 <h1 className="font-headline font-medium text-3xl leading-tight text-secondary drop-shadow-[0_4px_16px_rgba(0,0,0,0.45)] md:text-5xl">
-                  Outdoor Advertising in Bengaluru.
+                  Your Brand, Everywhere They Look.
                   <br />Hoardings. Metro. Transit.
                 </h1>
                 <p className="max-w-xl text-xl text-white font-light">
-                  We help businesses book hoarding sites, metro ads, van campaigns, and outdoor spaces across Bengaluru. 
+                 Hoardings, Metro ads, Vehicle Branding & more across Bangalore, Chennai, Coimbatore, Hyderabad & Kochi. 
                   < br />Tell us your area and budget — we will find the right site for you.
                   </p>
                 <div className="flex max-w-2xl flex-wrap gap-2">
@@ -118,13 +118,13 @@ export default function LandingPage() {
                   <div className="flex flex-col items-center justify-center px-4 py-4 text-center">
                     
                     <span className="text-sm font-medium text-secondary">
-                      200+ < br />Campaigns Done
+                      1000+ < br />Campaigns Done
                     </span>
                   </div>
 
                   <div className="flex flex-col items-center justify-center px-4 py-4 text-center">
                     <span className="text-sm font-medium text-secondary">
-                      All Bengaluru Areas Covered
+                      Pan India Covered
                     </span>
                   </div>
 
