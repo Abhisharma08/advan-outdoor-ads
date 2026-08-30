@@ -77,7 +77,7 @@ export default function LandingPage() {
                 </h1>
                 <p className="max-w-xl text-xl text-white font-light">
                  Hoardings, Metro ads, Vehicle Branding & more across Bangalore, Chennai, Coimbatore, Hyderabad & Kochi. 
-                  < br />Tell us your area and budget — we will find the right site for you.
+                  < br />Tell us your area and budget - we will find the right site for you.
                   </p>
                 <div className="flex max-w-2xl flex-wrap gap-2">
                   {/* {[
