@@ -172,7 +172,7 @@ export default function LandingPage() {
               </div>
               <div className="space-y-6">
                 <SectionHeader
-                  title="Where Do You Want to Advertise in Bengaluru?"
+                  title="Where Do You Want to Advertise?"
                   subtitle={
                 <>
                 </>
@@ -180,7 +180,7 @@ export default function LandingPage() {
                 centered={false}
                 />
                 <p className="text-lg text-slate-900 italic"> 
-                  We have hoarding sites, metro station spaces, van routes, and digital screens across all major areas of Bengaluru. 
+                  We have hoarding sites, metro station spaces, van routes, and digital screens across major areas of Bengaluru, Chennai, Coimbatore, Hyderabad & Kochi.
                   < br /> We will show you exactly which sites are available in your target area, with photos, dimensions, and current rates.
 
                 </p>
@@ -214,13 +214,13 @@ export default function LandingPage() {
                   centered={false}
                 />
                 <p className="text-lg text-slate-900 italic">
-                  Every day, thousands of people walk past the streets, malls, metro stations, and RWAs in Bengaluru. 
+                  Every day, thousands of people walk past the streets, malls, metro stations, and RWAs across Bengaluru, Chennai, Coimbatore, Hyderabad & Kochi. 
                   A well-placed outdoor ad puts your brand in front of these people — repeatedly, every single day.                  
                   </p>
                 <ul className="space-y-4">
                   {[
-                    "A hoarding on a busy Bengaluru road is seen by 40,000 to 80,000 people every day",
-                    "Metro station ads reach more than 4 lakh commuters daily on Namma Metro",
+                    "A hoarding on a busy road is seen by 40,000 to 80,000 people every day",
+                    "Metro station ads reach thousands of commuters daily across major metro cities",
                     "People see your outdoor ad again and again — this is how your brand gets remembered",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 font-medium text-primary">
@@ -250,7 +250,7 @@ export default function LandingPage() {
 <section className="w-full bg-white py-20" style={deferredSectionStyle}>
   <div className="container mx-auto max-w-7xl px-4">
     <SectionHeader
-      title="Nine Ways Your Brand Owns Bengaluru."
+      title="Nine Ways Your Brand Owns the City."
       subtitle=""
     />
 
@@ -264,7 +264,7 @@ export default function LandingPage() {
         icon: <PanelTop />,
         title: "Outdoor Hoardings",
         image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652139/Outdoor_2_jvjuja.png",
-        desc: "The Bengaluru Skyline Your Brand Can Own",
+        desc: "The City Skyline Your Brand Can Own.",
       },
       {
         icon: <Truck />,
@@ -276,7 +276,7 @@ export default function LandingPage() {
         icon: <MonitorPlay />,
         title: "Digital Signage",
         image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652149/Digital_Signage_xvbuw5.png",
-        desc: "Your Brand Moves On Bengaluru's Screens.",
+        desc: "Your Brand Moves On City Screens.",
       },
       {
         icon: <TrainFront />,
@@ -351,53 +351,7 @@ export default function LandingPage() {
     ))}
     </div>
   </div>
-</section>
-        {/* <section className="w-full bg-primary py-20 text-white" style={deferredSectionStyle}>
-          <div className="container mx-auto max-w-7xl px-4">
-            <SectionHeader
-              title={<span className="text-4xl text-white">Pick Your Format. We Handle Everything.</span>}
-                subtitle={
-                <>
-                  Five outdoor formats. Each built for one outcome:{" "}
-                  <span className="font-semibold text-secondary"> your brand</span>,{" "}
-                  <span className="font-semibold text-secondary">seen by the right Bengaluru consumer</span>,{" "}
-                  <span className="font-semibold text-secondary">at the right moment.</span>
-                </>   
-              }           light
-            />
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-              {[
-              { title: "Outdoor Hoarding Package", duration: "Campaign-Based", desc: "Any Brand Seeking Mass Visibility Strategic hoarding placements that make your brand unmissable." },
-              { title: "Transit & Van Advertising", duration: "Campaign-Based", desc: "Brands Reaching Mobile Audiences Roadshow and van campaigns that take your brand anywhere." },
-              { title: "Metro & Skywalk Advertising", duration: "Campaign-Based", desc: "Urban Brands & Consumer Products High-footfall metro and skywalk ads with maximum daily reach." },
-              { title: "Digital Signage Package", duration: "Campaign-Based", desc: "Retail Brands & Service Businesses Dynamic digital boards that captivate and convert audiences." },
-              { title: "Full Outdoor Brand Strategy", duration: "Retainer-Based", desc: "Growing Businesses & New Market Entries End-to-end outdoor strategy from placement to execution." },
-              ].map((item) => (
-                <Card key={item.title} className="group border-white/20 bg-white/10 transition-all hover:bg-white/20">
-                  <CardContent className="flex h-full flex-col p-6 text-center">
-                    <div className="flex-grow space-y-3">
-                      <h4 className="font-headline text-xl text-white">{item.title}</h4>
-                      <Badge variant="secondary" className="bg-secondary text-white">{item.duration}</Badge>
-                      <p className="text-sm text-white/70">{item.desc}</p>
-                    </div>
-                    <div className="mt-auto pt-4">
-                      <ScrollToLeadButton
-                        variant="outline"
-                        className="w-full border-white/60 bg-transparent text-sm font-bold text-white hover:bg-white/10 hover:text-white"
-                      >
-                        Enquire Now <ArrowRight className="ml-2 h-4 w-4" />
-                      </ScrollToLeadButton>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section> */}
-        {/* PACKAGES */}
-
-
-        
+</section>        
 <section
   className="w-full bg-primary/95 py-24 text-white"
   style={deferredSectionStyle}
@@ -417,7 +371,7 @@ export default function LandingPage() {
           </span>
           ,{" "}
           <span className="font-semibold text-secondary">
-            seen by the right Bengaluru consumer
+            seen by the right consumer
           </span>
           ,{" "}
           <span className="font-semibold text-secondary">
@@ -438,7 +392,7 @@ export default function LandingPage() {
           image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652165/Hoarding_Package_bwysia.png",
           desc: "",
           features: [
-            "Prime sites: MG Road, ORR, Whitefield, Hebbal, Koramangala",
+            "Prime sites across Bengaluru, Chennai, Coimbatore, Hyderabad & Kochi",
             "40,000–80,000 daily impressions per site - verified, not estimated",
             "Location + size + timing optimised for your consumer profile",
             "Installation, maintenance and site management - fully handled",
@@ -453,7 +407,7 @@ export default function LandingPage() {
           image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652168/Van_and_transit_svylac.png",
           desc: "",
           features: [
-            "Moving van campaigns across all Bengaluru zones and pin codes",
+            "Moving van campaigns across all major zones and pin codes",
             "Residential hubs, high streets, local markets - all covered",
             "GPS-tracked route coverage with daily activity report",
             "Minimum 8-hour daily street presence per campaign vehicle",
@@ -468,8 +422,8 @@ export default function LandingPage() {
           image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652162/Metro_dngih8.png",
           desc: "",
           features: [
-            "Namma Metro: platform, concourse, and train wrap formats available",
-            "4.5 lakh+ verified daily commuter reach across Purple + Green lines",
+            "Metro advertising across Bengaluru, Chennai, Hyderabad & other major metro cities",
+            "High daily commuter reach across major metro networks",
             "Skywalk panels: 8–12 seconds uninterrupted pedestrian attention",
             "Premium urban audience - working professionals, shoppers, students",
             "Multi-week booking available with creative refresh option",
@@ -483,7 +437,7 @@ export default function LandingPage() {
           image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1780652157/Outdoor_3_t2kxm3.png",
           desc: "",
           features: [
-            "Digital OOH across malls, IT parks, commercial zones in Bengaluru",
+            "Digital OOH across malls, IT parks, commercial zones in Bengaluru, Chennai, Coimbatore, Hyderabad & Kochi",
             "Motion content delivers 2.5x higher recall vs. static boards",
             "Real-time campaign updates - creative changes at zero extra cost",
             "Multiple creatives, daypart targeting, one unified campaign",
@@ -558,7 +512,7 @@ export default function LandingPage() {
           <SectionHeader
             title={
               <>
-                Good Sites in Bengaluru Get Booked Fast.  
+                Good Sites Get Booked Fast.  
               </>
             }
             subtitle=""
@@ -567,7 +521,8 @@ export default function LandingPage() {
             <div className="container relative z-10 mx-auto max-w-7xl space-y-8 px-4 text-center">
 
               <p className="mx-auto max-w-3xl text-base italic leading-loose text-slate-900 md:text-lg">
-                Bengaluru's prime hoarding locations — MG Road, Outer Ring Road, Whitefield flyovers
+                Prime hoarding locations, high-traffic roads, metro stations, flyovers, 
+                markets and commercial zones across Bengaluru, Chennai, Coimbatore, Hyderabad & Kochi get booked fast
 
               </p>
 
@@ -592,7 +547,7 @@ export default function LandingPage() {
               <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                 <div className="space-y-6">
                   <h2 className="font-headline text-4xl text-primary mb-2 font-headline font-bold">
-                    Ready to Put Your Brand on Bengaluru's Streets?
+                    Ready to Put Your Brand on the Streets?
                   </h2>
 
                   <p className="text-lg text-muted-foreground">
